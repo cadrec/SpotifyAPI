@@ -1,6 +1,6 @@
 # SpotifyAPI
 
-# Cadre: Work on code which will interact with API
-# Nima: Work on code which will interact with API
-# Vinny: Explore API as well as gather more data
-# Justin: Explore Spotify API upon gaining access
+# Cadre: Worked on code for regional analysis
+# Nima: Work on code for regional analysis
+# Vinny: Collected data in CSV file
+# Justin: Worked on poster and preparing it for presentation
