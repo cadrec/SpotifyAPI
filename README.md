@@ -4,6 +4,6 @@
 #The data is read into a text file that we converted to a .csv for readability. 
 
 # Cadre: Worked on code for regional analysis
-# Nima: Work on code for regional analysis
-# Vinny: Collected data in CSV file and also helped with the code. 
+# Nima: Collected and combed through the raw data and converted it to CSV format and also helped with the code. 
+# Vinny: Using Spotify api and some packages from Pythons Spotify librray, gathered data on artists and countries. Created the code for data gathering.
 # Justin: Worked on poster and preparing it for presentation
