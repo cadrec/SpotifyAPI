@@ -6,8 +6,8 @@
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-ID =     'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-SECRET = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+ID =     'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+SECRET = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 client_credentials_manager = SpotifyClientCredentials(client_id = ID, client_secret = SECRET)
 spotify = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
@@ -29,6 +29,10 @@ de_top_tracks = [] #germany
 de_top_albums = []
 br_top_tracks = [] #brazil
 br_top_albums = []
+mx_top_tracks = [] #mexico
+mx_top_albums = []
+se_top_tracks = [] #sweden
+se_top_albums = []
 
 us_drake_tracks = spotify.artist_top_tracks(drake_id, country="US")
 us_top_tracks.append(us_drake_tracks)
@@ -50,6 +54,15 @@ br_top_tracks.append(br_drake_tracks)
 br_drake_albums = spotify.artist_albums(drake_id, album_type="album", country="BR", limit=3)
 br_top_albums.append(br_drake_albums)
 
+mx_drake_tracks = spotify.artist_top_tracks(drake_id, country="MX")
+mx_top_tracks.append(mx_drake_tracks)
+mx_drake_albums = spotify.artist_albums(drake_id, album_type="album", country="MX", limit=3)
+mx_top_albums.append(mx_drake_albums)
+
+se_drake_tracks = spotify.artist_top_tracks(drake_id, country="SE")
+se_top_tracks.append(se_drake_tracks)
+se_drake_albums = spotify.artist_albums(drake_id, album_type="album", country="SE", limit=3)
+se_top_albums.append(se_drake_albums)
 
 
 
@@ -72,6 +85,16 @@ br_billie_tracks = spotify.artist_top_tracks(billie_id, country="BR")
 br_top_tracks.append(br_billie_tracks)
 br_billie_albums = spotify.artist_albums(billie_id, album_type="album", country="BR", limit=3)
 br_top_albums.append(br_billie_albums)
+
+mx_billie_tracks = spotify.artist_top_tracks(billie_id, country="MX")
+mx_top_tracks.append(mx_billie_tracks)
+mx_billie_albums = spotify.artist_albums(billie_id, album_type="album", country="MX", limit=3)
+mx_top_albums.append(mx_billie_albums)
+
+se_billie_tracks = spotify.artist_top_tracks(billie_id, country="SE")
+se_top_tracks.append(se_billie_tracks)
+se_billie_albums = spotify.artist_albums(billie_id, album_type="album", country="SE", limit=3)
+se_top_albums.append(se_billie_albums)
 
 
 
@@ -96,6 +119,15 @@ br_top_tracks.append(br_zeppelin_tracks)
 br_zeppelin_albums = spotify.artist_albums(zeppelin_id, album_type="album", country="BR", limit=3)
 br_top_albums.append(br_zeppelin_albums)
 
+mx_zeppelin_tracks = spotify.artist_top_tracks(zeppelin_id, country="MX")
+mx_top_tracks.append(mx_zeppelin_tracks)
+mx_zeppelin_albums = spotify.artist_albums(zeppelin_id, album_type="album", country="MX", limit=3)
+mx_top_albums.append(mx_zeppelin_albums)
+
+se_zeppelin_tracks = spotify.artist_top_tracks(zeppelin_id, country="SE")
+se_top_tracks.append(se_zeppelin_tracks)
+se_zeppelin_albums = spotify.artist_albums(zeppelin_id, album_type="album", country="SE", limit=3)
+se_top_albums.append(se_zeppelin_albums)
 
 
 
@@ -119,6 +151,15 @@ br_top_tracks.append(br_combs_tracks)
 br_combs_albums = spotify.artist_albums(combs_id, album_type="album", country="BR", limit=3)
 br_top_albums.append(br_combs_albums)
 
+mx_combs_tracks = spotify.artist_top_tracks(combs_id, country="MX")
+mx_top_tracks.append(mx_combs_tracks)
+mx_combs_albums = spotify.artist_albums(combs_id, album_type="album", country="MX", limit=3)
+mx_top_albums.append(mx_combs_albums)
+
+se_combs_tracks = spotify.artist_top_tracks(combs_id, country="SE")
+se_top_tracks.append(se_combs_tracks)
+se_combs_albums = spotify.artist_albums(combs_id, album_type="album", country="SE", limit=3)
+se_top_albums.append(se_combs_albums)
 
 
 
@@ -142,6 +183,15 @@ br_top_tracks.append(br_slipknot_tracks)
 br_slipknot_albums = spotify.artist_albums(slipknot_id, album_type="album", country="BR", limit=3)
 br_top_albums.append(br_slipknot_albums)
 
+mx_slipknot_tracks = spotify.artist_top_tracks(slipknot_id, country="MX")
+mx_top_tracks.append(mx_slipknot_tracks)
+mx_slipknot_albums = spotify.artist_albums(slipknot_id, album_type="album", country="MX", limit=3)
+mx_top_albums.append(mx_slipknot_albums)
+
+se_slipknot_tracks = spotify.artist_top_tracks(slipknot_id, country="SE")
+se_top_tracks.append(se_slipknot_tracks)
+se_slipknot_albums = spotify.artist_albums(slipknot_id, album_type="album", country="SE", limit=3)
+se_top_albums.append(se_slipknot_albums)
 
 
 
@@ -165,6 +215,15 @@ br_top_tracks.append(br_marshmello_tracks)
 br_marshmello_albums = spotify.artist_albums(marshmello_id, album_type="album", country="BR", limit=3)
 br_top_albums.append(br_marshmello_albums)
 
+mx_marshmello_tracks = spotify.artist_top_tracks(marshmello_id, country="MX")
+mx_top_tracks.append(mx_marshmello_tracks)
+mx_marshmello_albums = spotify.artist_albums(marshmello_id, album_type="album", country="MX", limit=3)
+mx_top_albums.append(mx_marshmello_albums)
+
+se_marshmello_tracks = spotify.artist_top_tracks(marshmello_id, country="SE")
+se_top_tracks.append(se_marshmello_tracks)
+se_marshmello_albums = spotify.artist_albums(marshmello_id, album_type="album", country="SE", limit=3)
+se_top_albums.append(se_marshmello_albums)
 
 
 
@@ -188,6 +247,15 @@ br_top_tracks.append(br_khalid_tracks)
 br_khalid_albums = spotify.artist_albums(khalid_id, album_type="album", country="BR", limit=3)
 br_top_albums.append(br_khalid_albums)
 
+mx_khalid_tracks = spotify.artist_top_tracks(khalid_id, country="MX")
+mx_top_tracks.append(mx_khalid_tracks)
+mx_khalid_albums = spotify.artist_albums(khalid_id, album_type="album", country="MX", limit=3)
+mx_top_albums.append(mx_khalid_albums)
+
+se_khalid_tracks = spotify.artist_top_tracks(khalid_id, country="SE")
+se_top_tracks.append(se_khalid_tracks)
+se_khalid_albums = spotify.artist_albums(khalid_id, album_type="album", country="SE", limit=3)
+se_top_albums.append(se_khalid_albums)
 
 
 
@@ -211,6 +279,15 @@ br_top_tracks.append(br_badbunny_tracks)
 br_badbunny_albums = spotify.artist_albums(badbunny_id, album_type="album", country="BR", limit=3)
 br_top_albums.append(br_badbunny_albums)
 
+mx_badbunny_tracks = spotify.artist_top_tracks(badbunny_id, country="MX")
+mx_top_tracks.append(mx_badbunny_tracks)
+mx_badbunny_albums = spotify.artist_albums(badbunny_id, album_type="album", country="MX", limit=3)
+mx_top_albums.append(mx_badbunny_albums)
+
+se_badbunny_tracks = spotify.artist_top_tracks(badbunny_id, country="SE")
+se_top_tracks.append(se_badbunny_tracks)
+se_badbunny_albums = spotify.artist_albums(badbunny_id, album_type="album", country="SE", limit=3)
+se_top_albums.append(se_badbunny_albums)
 
 
 
@@ -218,18 +295,52 @@ with open("spotify_us_output.txt", "w") as file:
     for track in us_top_tracks:
         for key,value in track.items():
             file.write("%s:%s\n" % (key,value))
+    file.write('\n'*10)
+    for album in us_top_albums:
+        for key,value in album.items():
+            file.write("%s:%s\n" % (key,value))
 
 with open("spotify_gb_output.txt", "w") as file:
     for track in gb_top_tracks:
         for key,value in track.items():
+            file.write("%s:%s\n" % (key,value))
+    file.write('\n'*10)
+    for album in gb_top_albums:
+        for key,value in album.items():
             file.write("%s:%s\n" % (key,value))
 
 with open("spotify_de_output.txt", "w") as file:
     for track in de_top_tracks:
         for key,value in track.items():
             file.write("%s:%s\n" % (key,value))
+    file.write('\n'*10)
+    for album in de_top_albums:
+        for key,value in album.items():
+            file.write("%s:%s\n" % (key,value))
 
 with open("spotify_br_output.txt", "w") as file:
     for track in br_top_tracks:
         for key,value in track.items():
+            file.write("%s:%s\n" % (key,value))
+    file.write('\n'*10)
+    for album in br_top_albums:
+        for key,value in album.items():
+            file.write("%s:%s\n" % (key,value))
+
+with open("spotify_mx_output.txt", "w") as file:
+    for track in mx_top_tracks:
+        for key,value in track.items():
+            file.write("%s:%s\n" % (key,value))
+    file.write('\n'*10)
+    for album in mx_top_albums:
+        for key,value in album.items():
+            file.write("%s:%s\n" % (key,value))
+
+with open("spotify_se_output.txt", "w") as file:
+    for track in se_top_tracks:
+        for key,value in track.items():
+            file.write("%s:%s\n" % (key,value))
+    file.write('\n'*10)
+    for album in se_top_albums:
+        for key,value in album.items():
             file.write("%s:%s\n" % (key,value))
