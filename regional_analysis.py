@@ -6,8 +6,8 @@
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-ID =     'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-SECRET = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+ID =     'xxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+SECRET = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 client_credentials_manager = SpotifyClientCredentials(client_id = ID, client_secret = SECRET)
 spotify = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
@@ -291,56 +291,72 @@ se_top_albums.append(se_badbunny_albums)
 
 
 
-with open("spotify_us_output.txt", "w") as file:
+with open("spotify_us_tracks.txt", "w") as file:
     for track in us_top_tracks:
         for key,value in track.items():
             file.write("%s:%s\n" % (key,value))
-    file.write('\n'*10)
+
+with open("spotify_us_albums.txt", "w") as file:
     for album in us_top_albums:
         for key,value in album.items():
             file.write("%s:%s\n" % (key,value))
 
-with open("spotify_gb_output.txt", "w") as file:
+
+
+with open("spotify_gb_tracks.txt", "w") as file:
     for track in gb_top_tracks:
         for key,value in track.items():
             file.write("%s:%s\n" % (key,value))
-    file.write('\n'*10)
+
+with open("spotify_gb_albums.txt", "w") as file:
     for album in gb_top_albums:
         for key,value in album.items():
             file.write("%s:%s\n" % (key,value))
 
-with open("spotify_de_output.txt", "w") as file:
+
+
+with open("spotify_de_tracks.txt", "w") as file:
     for track in de_top_tracks:
         for key,value in track.items():
             file.write("%s:%s\n" % (key,value))
-    file.write('\n'*10)
+
+with open("spotify_de_albums.txt", "w") as file:
     for album in de_top_albums:
         for key,value in album.items():
             file.write("%s:%s\n" % (key,value))
 
-with open("spotify_br_output.txt", "w") as file:
+
+
+with open("spotify_br_tracks.txt", "w") as file:
     for track in br_top_tracks:
         for key,value in track.items():
             file.write("%s:%s\n" % (key,value))
-    file.write('\n'*10)
+
+with open("spotify_br_albums.txt", "w") as file:
     for album in br_top_albums:
         for key,value in album.items():
             file.write("%s:%s\n" % (key,value))
 
-with open("spotify_mx_output.txt", "w") as file:
+
+
+with open("spotify_mx_tracks.txt", "w") as file:
     for track in mx_top_tracks:
         for key,value in track.items():
             file.write("%s:%s\n" % (key,value))
-    file.write('\n'*10)
+
+with open("spotify_mx_albums.txt", "w") as file:
     for album in mx_top_albums:
         for key,value in album.items():
             file.write("%s:%s\n" % (key,value))
 
-with open("spotify_se_output.txt", "w") as file:
+
+
+with open("spotify_se_tracks.txt", "w") as file:
     for track in se_top_tracks:
         for key,value in track.items():
             file.write("%s:%s\n" % (key,value))
-    file.write('\n'*10)
+
+with open("spotify_se_albums.txt", "w") as file:
     for album in se_top_albums:
         for key,value in album.items():
             file.write("%s:%s\n" % (key,value))
