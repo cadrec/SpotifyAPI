@@ -10,14 +10,6 @@ One interestong example is how Mexico likes slipknot a deathmetal band, a lot mo
 The graphs themselves do not regenerate with the python code beaue that is pulling from the API and the information on users and their likes changes constantly, so to be accurate we just kept the graphs that we have have so the data is not different. 
 
 
-Every team member just added their contributions here in the master ReadMe as to keep it all centralized. 
-
-# Cadre: Worked on code for regional analysis also created the graphs for the data. 
-# Nima: Collected and combed through the raw data and converted it to CSV format and also helped with the regional analysis code and did the poster. 
-# Vinny: Using Spotify api and some packages from Pythons Spotify librray, gathered data on artists and countries. Created the code for data gathering.
-# Justin: Worked on poster and preparing it for presentation
-
-
-Links we used to help us work on the project. 
+Links used to help work on the project. 
 https://spotipy.readthedocs.io/en/2.11.2/
 https://medium.com/@maxtingle/getting-started-with-spotifys-api-spotipy-197c3dc6353b
